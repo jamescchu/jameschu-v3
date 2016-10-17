@@ -18,7 +18,7 @@ gulp.task('browser-sync', ['hexo-gen'], function() {
     browserSync({
         open: false,
         notify: false,
-        files: "public/*",
+        files: "public/**/*",
         server: {
             baseDir: 'public'
         }
