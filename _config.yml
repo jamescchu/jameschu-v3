@@ -89,8 +89,3 @@ beautify:
     'indent_inner_html': false
     'indent_size': 2
     'indent_with_tabs': false
-
-# Browser Sync
-browsersync:
-  open: false
-  notify: false
