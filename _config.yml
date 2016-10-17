@@ -63,9 +63,34 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: jameschu
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Auto Prefixer
+autoprefixer:
+  browsers:
+    - 'last 2 versions'
+
+# Sass Compiler
+node_sass:
+  outputStyle: nested
+  precision: 4
+  sourceComments: false
+
+# Hexo Beautify
+beautify:
+  types:
+    - html
+  html:
+    'indent_inner_html': false
+    'indent_size': 2
+    'indent_with_tabs': false
+
+# Browser Sync
+browsersync:
+  open: false
+  notify: false
