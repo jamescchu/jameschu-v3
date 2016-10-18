@@ -1,0 +1,7 @@
+{
+  "name": "james-chu.com",
+  "private": true,
+  "dependencies": {
+    "sanitize-css": "^4.1.0"
+  }
+}
