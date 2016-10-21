@@ -3,11 +3,11 @@ html(lang='en')
     head
         include head.pug
     body
-        .page-container
-            nav
+        .page-container.row
+            nav.col
                 include navigation.pug
-            main
-                section.row.col
+            main.row
+                section.col
                     block container
-                footer
+                footer.col
                     include footer.pug
