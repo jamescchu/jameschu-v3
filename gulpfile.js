@@ -52,6 +52,9 @@ gulp.task('bower-css', function() {
 gulp.task('svgstore', ['clean'], function() {
     var svgs = gulp
         .src(dest + 'source/_svg/*.svg')
+        .pipe(plugins.rename({
+            prefix: 'svg-'
+        }))
         .pipe(plugins.svgstore({
             inlineSvg: true
         }));
