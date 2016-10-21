@@ -18,6 +18,7 @@ a:visited {
     color: $color-primary;
     text-decoration: none;
 }
+a.nav-list-link.active,
 a:hover {
     border-bottom: .2rem $color-primary solid;
 }

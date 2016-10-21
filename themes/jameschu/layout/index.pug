@@ -1,5 +1,9 @@
 extend _partials/layout.pug
 
+block heroContent
+    include _mixins/hero.pug
+    +heroConstruction()
+
 block container
     include _mixins/post.pug
     +posts()

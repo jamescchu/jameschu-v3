@@ -1,0 +1,30 @@
+header {
+    a.logo-link:hover, .logo-link {
+        margin: 2rem 0;
+        width: 50%;
+        float: left;
+        border: none;
+    }
+
+    .svg-logo {
+        fill: $color-primary;
+        height: 3rem;
+        width: 10rem;
+    }
+
+    .nav-list {
+        margin: 2rem 0;
+        width: 50%;
+        text-align: right;
+    }
+
+    .nav-list-item {
+        display: inline-block;
+        padding: 0 1rem;
+        font-style: italic;
+    }
+
+    .hero {
+      margin: 2rem 0;
+    }
+}

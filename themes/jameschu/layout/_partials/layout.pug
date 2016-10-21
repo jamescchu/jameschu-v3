@@ -5,8 +5,12 @@ html(lang='en')
     body
         include symbols.html
         .page-container.row
-            nav.col
+            header.row
+                a.col.logo-link(href=url_for())
+                    svg.svg-logo
+                        use(xlink:href="#svg-logo")
                 include navigation.pug
+                block heroContent
             main.row
                 section.col
                     block container
