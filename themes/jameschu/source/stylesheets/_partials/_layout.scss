@@ -1,13 +1,16 @@
 html {
-  font-size: $fontSize-root;
+    font-size: $fontSize-root;
 }
 
 body {
-  background: $color-background;
-  border-top: 0.2rem solid $color-primary;
+    background: $color-background;
+    border-top: .2rem solid $color-primary;
+    font-size: $fontSize-base;
+    font-family: $fontFamily-serif;
+    color: $color-primary;
 }
 
 .page-container {
-  max-width: 90rem;
-  margin: 0 auto;
+    max-width: 90rem;
+    margin: 0 1rem;
 }

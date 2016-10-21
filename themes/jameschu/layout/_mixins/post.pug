@@ -8,12 +8,12 @@ mixin posts()
         - page.posts.each(function (item) {
             li.project-list-item
                 article.project-block
-                    .project-date
+                    span.project-date
                         != full_date(item.date, 'YYYY')
                     h2.project-title
                         a.project-title-link(href= url_for(item.path))
                             != item.title
-                    h3.project-info
+                    span.project-info
                         != item.skills
         - })
 

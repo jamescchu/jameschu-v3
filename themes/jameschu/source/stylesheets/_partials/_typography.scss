@@ -1,18 +1,34 @@
 // Font Family
-$fontFamily-body: Georgia, serif;
-$fontFamily-header: 'Montserrat', sans-serif;
+$fontFamily-serif: Georgia, serif;
+$fontFamily-sans: 'Montserrat', sans-serif;
 
 // Text font size
 $fontSize-root: 62.5%;
 
 $fontSize-base: 1.6rem;
 
+$fontSize-biggest: $fontSize-base * 2;
 $fontSize-bigger: $fontSize-base + .4rem;
 $fontSize-big: $fontSize-base + .2rem;
 $fontSize-small: $fontSize-base - .2rem;
 $fontSize-smaller: $fontSize-base - .4rem;
+a,
+a:active,
+a:visited {
+    color: $color-primary;
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: .2rem $color-primary solid;
+}
+
+h2 {
+    margin: 0;
+    font-family: $fontFamily-sans;
+    font-size: $fontSize-biggest;
+}
 
 ul {
-  padding: 0;
-  list-style: none;
+    padding: 0;
+    list-style: none;
 }
