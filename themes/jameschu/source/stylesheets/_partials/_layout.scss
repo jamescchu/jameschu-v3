@@ -1,8 +1,13 @@
+html {
+  font-size: $fontSize-root;
+}
+
 body {
   background: $color-background;
-  border-top: 2px solid $color-primary;
+  border-top: 0.2rem solid $color-primary;
 }
 
 .page-container {
   max-width: 90rem;
+  margin: 0 auto;
 }
