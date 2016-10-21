@@ -48,9 +48,30 @@ gulp.task('bower-css', function() {
         .pipe(gulp.dest(dest + 'source/stylesheets/vendor'));
 });
 
+// Inline SVG Files
+gulp.task('svgstore', ['clean'], function() {
+    var svgs = gulp
+        .src(dest + 'source/_svg/*.svg')
+        .pipe(plugins.svgstore({
+            inlineSvg: true
+        }));
+
+    function fileContents(filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src(dest + 'layout/_partials/symbols.html')
+        .pipe(plugins.inject(svgs, {
+            transform: fileContents
+        }))
+        .pipe(gulp.dest(dest + 'layout/_partials'));
+});
+
 // Watch for Updates
 gulp.task('watch', function() {
     gulp.watch('bower_components/*', ['bower-css']);
+    gulp.watch(dest + 'source/_svg/*.svg', ['svgstore']);
 });
 
 gulp.task('default', ['clean', 'browser-sync', 'watch']);
