@@ -11,3 +11,8 @@ $fontSize-bigger: $fontSize-base + .4rem;
 $fontSize-big: $fontSize-base + .2rem;
 $fontSize-small: $fontSize-base - .2rem;
 $fontSize-smaller: $fontSize-base - .4rem;
+
+ul {
+  padding: 0;
+  list-style: none;
+}
