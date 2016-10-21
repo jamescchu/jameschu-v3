@@ -1,5 +1,9 @@
-@import "partials/base";
+@import '_partials/base';
+
+@import '_vendor/sanitize';
 
 // Partials
-@import "partials/grid";
-@import "partials/typography";
+@import '_partials/grid';
+@import '_partials/typography';
+@import '_partials/misc';
+@import '_partials/layout';
