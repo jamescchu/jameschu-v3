@@ -1,6 +1,6 @@
 mixin postInfo(item)
-    .project-date
-        != full_date(item.date, 'll')
+    span.project-date
+        != full_date(item.date, 'YYYY')
 
 //- Index Page
 mixin posts()
@@ -8,8 +8,7 @@ mixin posts()
         - page.posts.each(function (item) {
             li.project-list-item
                 article.project-block
-                    span.project-date
-                        != full_date(item.date, 'YYYY')
+                    +postInfo(item)
                     h2.project-title
                         a.project-title-link(href= url_for(item.path))
                             != item.title
