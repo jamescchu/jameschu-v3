@@ -89,3 +89,25 @@ beautify:
     'indent_inner_html': false
     'indent_size': 2
     'indent_with_tabs': false
+
+# Minifier
+html_minifier:
+  enable: false
+
+js_minifier:
+  enable: true
+  exclude:
+    - '*.min.js'
+
+css_minifier:
+  enable: true
+  exclude:
+    - '*.min.css'
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false

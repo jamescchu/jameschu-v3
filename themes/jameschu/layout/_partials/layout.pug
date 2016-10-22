@@ -4,13 +4,13 @@ html(lang='en')
         include head.pug
     body
         include symbols.html
-        .page-container.row#barba-wrapper
+        #content-wrapper.row
             header.row
                 a.col.logo-link(href=url_for())
                     svg.svg-logo
                         use(xlink:href="#svg-logo")
                 include navigation.pug
-            main.barba-container.row
+            main.content-container.row
                 block heroContent
                 section.col
                     block container

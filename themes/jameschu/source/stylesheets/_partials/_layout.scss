@@ -10,7 +10,7 @@ body {
     color: $color-primary;
 }
 
-.page-container {
+#content-wrapper {
     margin: 0 2rem;
     @include break(medium) {
       max-width: 50rem;

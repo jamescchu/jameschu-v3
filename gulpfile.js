@@ -55,6 +55,16 @@ gulp.task('bower-js', function() {
         .pipe(gulp.dest(dest + 'source/scripts/_vendor'));
 });
 
+// Concat all js files into one
+gulp.task('js', function() {
+    return gulp.src([dest + 'source/scripts/_vendor/*.js', dest + 'source/scripts/_partials/*.js'])
+        .pipe(plugins.concat('global.js'))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
+        .pipe(gulp.dest(dest + 'source/scripts/'));
+});
+
 // Inline SVG Files
 gulp.task('svgstore', ['clean'], function() {
     var svgs = gulp
@@ -82,6 +92,7 @@ gulp.task('svgstore', ['clean'], function() {
 gulp.task('watch', function() {
     gulp.watch('bower_components/*', ['bower-css', 'bower-js']);
     gulp.watch(dest + 'source/_svg/*.svg', ['svgstore']);
+    gulp.watch(dest + 'source/scripts/**/*', ['js'])
 });
 
 gulp.task('default', ['clean', 'browser-sync', 'watch']);
