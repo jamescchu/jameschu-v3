@@ -2,6 +2,7 @@
   "name": "james-chu.com",
   "private": true,
   "dependencies": {
-    "sanitize-css": "^4.1.0"
+    "sanitize-css": "^4.1.0",
+    "barba.js": "luruke/barba.js#^1.0.0"
   }
 }

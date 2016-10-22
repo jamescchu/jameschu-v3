@@ -48,6 +48,13 @@ gulp.task('bower-css', function() {
         .pipe(gulp.dest(dest + 'source/stylesheets/vendor'));
 });
 
+// Move Bower Files
+gulp.task('bower-js', function() {
+    return gulp.src(mainBowerFiles())
+        .pipe(plugins.filter('*.js'))
+        .pipe(gulp.dest(dest + 'source/scripts/vendor'));
+});
+
 // Inline SVG Files
 gulp.task('svgstore', ['clean'], function() {
     var svgs = gulp
@@ -73,7 +80,7 @@ gulp.task('svgstore', ['clean'], function() {
 
 // Watch for Updates
 gulp.task('watch', function() {
-    gulp.watch('bower_components/*', ['bower-css']);
+    gulp.watch('bower_components/*', ['bower-css', 'bower-js']);
     gulp.watch(dest + 'source/_svg/*.svg', ['svgstore']);
 });
 
