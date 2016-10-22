@@ -45,14 +45,14 @@ gulp.task('clean', function() {
 gulp.task('bower-css', function() {
     return gulp.src(mainBowerFiles())
         .pipe(plugins.filter('*.css'))
-        .pipe(gulp.dest(dest + 'source/stylesheets/vendor'));
+        .pipe(gulp.dest(dest + 'source/stylesheets/_vendor'));
 });
 
 // Move Bower Files
 gulp.task('bower-js', function() {
     return gulp.src(mainBowerFiles())
         .pipe(plugins.filter('*.js'))
-        .pipe(gulp.dest(dest + 'source/scripts/vendor'));
+        .pipe(gulp.dest(dest + 'source/scripts/_vendor'));
 });
 
 // Inline SVG Files
