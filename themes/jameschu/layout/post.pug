@@ -3,6 +3,6 @@ extend _partials/layout.pug
 block siteTitle
     != page.title + " · " + config.title
 
-block container
+block mainContent
     include _mixins/post.pug
     +post(page)

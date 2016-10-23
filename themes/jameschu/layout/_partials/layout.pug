@@ -12,8 +12,8 @@ html(lang='en')
                 include navigation.pug
             main.content-container.row
                 block heroContent
-                section.col
-                    block container
-                footer.col
+                section.col(data-transition="fadeIn")
+                    block mainContent
+                footer.col(data-transition="fadeIn")
                     include footer.pug
         include scripts.pug
