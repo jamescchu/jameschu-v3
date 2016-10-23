@@ -1,5 +1,7 @@
 html {
     font-size: $fontSize-root;
+    width:100vw;
+    overflow-x:hidden;
 }
 
 body {
@@ -12,11 +14,12 @@ body {
 
 #content-wrapper {
     margin: 0 2rem;
+    overflow-x: hidden;
     @include break(medium) {
-      max-width: 50rem;
-      margin: 0 auto;
+        max-width: 50rem;
+        margin: 0 auto;
     }
     @include break(large) {
-      max-width: 70rem;
+        max-width: 70rem;
     }
 }
