@@ -8,5 +8,11 @@ block description
     meta(name="description", content= config.description ? config.description : 'A Blog Powered By Hexo')
 
 meta(name='viewport' content='width=device-width, initial-scale=1')
-link(href='/stylesheets/global.css' rel='stylesheet' type='text/css')
-link(href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css')
+
+link(rel="shortcut icon" href=url_for("images/favicon.ico"))
+link(rel="apple-touch-icon-precomposed" sizes="72x72" href=url_for("images/favicon/favicon-72.png"))
+link(rel="apple-touch-icon-precomposed" sizes="120x120" href=url_for("images/favicon/favicon-120.png"))
+link(rel="apple-touch-icon-precomposed" sizes="144x144" href=url_for("images/favicon/favicon-144.png"))
+link(rel="apple-touch-icon-precomposed" sizes="152x152" href=url_for("images/favicon/favicon-152.png"))
+link(href=href=url_for("/stylesheets/global.css") rel="stylesheet" type="text/css")
+link(href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css")
