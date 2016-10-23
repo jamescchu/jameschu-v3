@@ -5,9 +5,9 @@ $fontFamily-sans: 'Montserrat', sans-serif;
 // Text font size
 $fontSize-root: 62.5%;
 
-$fontSize-base: 1.6rem;
+$fontSize-base: 2rem;
 
-$fontSize-biggest: $fontSize-base * 2;
+$fontSize-biggest: $fontSize-base + 1rem;
 $fontSize-bigger: $fontSize-base + .4rem;
 $fontSize-big: $fontSize-base + .2rem;
 $fontSize-small: $fontSize-base - .2rem;
