@@ -4,38 +4,22 @@ tags: []
 categories: []
 date: 2016-10-16 18:23:00
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info.
 
-## Quick Start
+## h2 Header
 
-### Create a new post
+This is some regular body text to accompany the header.
 
-``` bash
-$ hexo new "My New Post"
-```
+### h3 Header
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+This is another regular body text to accompany the header
 
-### Run server
+> This is a block quote example, and this text is to potentially see what happens when it breaks onto a new line and such.
 
-``` bash
-$ hexo server
-```
+These are links: [Google Site](http://google.com)
 
-More info: [Server](https://hexo.io/docs/server.html)
+This is an image:
 
-### Generate static files
+![Overview of current brand](http://blog.sprabbit.com/hexo-theme-chan/assets/wallpaper-2572384.jpg)
 
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
+{% photoswipe http://blog.sprabbit.com/hexo-theme-chan/assets/wallpaper-2572384.jpg test 1920 1080 %}
