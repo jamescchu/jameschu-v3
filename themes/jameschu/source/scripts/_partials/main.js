@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Scroll to the wrapper
     Barba.Dispatcher.on('transitionCompleted', function() {
-        window.scrollTo(0, wrapper.getBoundingClientRect().top);
+        window.scrollTo(0, 0);
     });
 
     // Add transition to barba

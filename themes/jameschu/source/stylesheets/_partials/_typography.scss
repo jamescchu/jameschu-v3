@@ -29,6 +29,11 @@ h1, h2 {
     font-size: $fontSize-biggest;
 }
 
+h3 {
+  font-family: $fontFamily-sans;
+  font-size: $fontSize-bigger;
+}
+
 ul {
     padding: 0;
     list-style: none;

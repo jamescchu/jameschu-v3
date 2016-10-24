@@ -1,6 +1,7 @@
 @import '_partials/base';
 
 @import '_vendor/sanitize';
+@import '_vendor/gallery-ui';
 
 // Partials
 @import '_partials/grid';
@@ -10,4 +11,5 @@
 @import '_partials/footer';
 @import '_partials/index';
 @import '_partials/header';
-@import '_partials/animate'
+@import '_partials/animate';
+@import '_partials/postbit';

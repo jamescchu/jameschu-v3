@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "sanitize-css": "^4.1.0",
-    "barba.js": "luruke/barba.js#^1.0.0"
+    "barba.js": "luruke/barba.js#^1.0.0",
+    "photoswipe": "^4.1.1"
   }
 }
