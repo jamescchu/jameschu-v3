@@ -1,7 +1,13 @@
 figure {
   margin: 2rem 0;
+  a {
+    cursor: zoom-in;
+  }
 }
 img {
   max-width: 100%;
   max-height: 100%;
+}
+.pswp__item {
+  cursor: zoom-out;
 }
