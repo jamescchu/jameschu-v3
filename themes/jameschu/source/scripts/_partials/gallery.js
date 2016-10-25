@@ -1,13 +1,14 @@
 var pswpElement = document.querySelectorAll('.pswp')[0];
 if (pswpElement) {
-    var gallerySelector = '.js-post-content';
+    var gallerySelector = '.article-entry';
 
     var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         // parse slide data (url, title, size ...) from DOM elements
         // (children of gallerySelector)
         var parseThumbnailElements = function(el) {
-            var thumbElements = Array.prototype.slice.call(el.querySelectorAll('figure.js-post-image')),
+            //var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+            var thumbElements = Array.prototype.slice.call(el.querySelectorAll('figure.article-gallery-img')),
                 numNodes = thumbElements.length,
                 items = [],
                 figureEl,
@@ -83,8 +84,11 @@ if (pswpElement) {
 
             // find index of clicked item by looping through all child nodes
             // alternatively, you may define index via data- attribute
-            var clickedGallery = clickedListItem.parentNode,
-                childNodes = clickedListItem.parentNode.childNodes,
+            var clickedGallery = closest(clickedListItem, function(el) {
+              return el.matches(gallerySelector);
+            }),
+                //childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                childNodes = Array.prototype.slice.call(clickedGallery.querySelectorAll('figure.article-gallery-img')),
                 numChildNodes = childNodes.length,
                 nodeIndex = 0,
                 index;
@@ -100,8 +104,6 @@ if (pswpElement) {
                 }
                 nodeIndex++;
             }
-
-
 
             if (index >= 0) {
                 // open PhotoSwipe if valid index found
