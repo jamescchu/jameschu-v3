@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Scroll to the wrapper
     Barba.Dispatcher.on('transitionCompleted', function() {
         window.scrollTo(0, 0);
+        initPhotoSwipeFromDOM(gallerySelector);
     });
 
     // Add transition to barba
