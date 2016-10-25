@@ -32,7 +32,7 @@ var photoswipe = function(args, content) {
     width,
     height;
 
-  if (args.length && testUrl(args[0])) {
+  if (args.length) {
     thumbnail = args.shift();
   }
 
@@ -45,8 +45,8 @@ var photoswipe = function(args, content) {
 
   return (
     '<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">' +
-      '<a href="' + url_for(original) + '" title="' + title + '"' + ((width && height) ? 'data-size="' + width + 'x' + height + '"' : '') + '>' +
-        '<img src="' + (url_for(thumbnail || original)) + '" alt="' + title + '">' +
+      '<a class="no-barba" href="' + original + '" title="' + title + '"' + ((width && height) ? 'data-size="' + width + 'x' + height + '"' : '') + '>' +
+        '<img src="' + (thumbnail || original) + '" alt="' + title + '">' +
       '</a>' +
       '<figcaption class="caption">' + (title || '') + '</figcaption>' +
     '</figure>'

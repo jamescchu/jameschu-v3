@@ -6612,11 +6612,11 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 // execute above function
 initPhotoSwipeFromDOM(gallerySelector);
 
-document.addEventListener("DOMContentLoaded", function() {
-    var dom = Barba.Pjax.Dom;
-    dom.wrapperId = 'content-wrapper';
-    dom.containerClass = 'content-container';
+var dom = Barba.Pjax.Dom;
+dom.wrapperId = 'content-wrapper';
+dom.containerClass = 'content-container';
 
+document.addEventListener("DOMContentLoaded", function() {
     Barba.Pjax.init();
     Barba.Prefetch.init();
 
