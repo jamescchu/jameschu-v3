@@ -13,10 +13,13 @@ $fontSize-big: $fontSize-base + .2rem;
 $fontSize-small: $fontSize-base - .2rem;
 $fontSize-smaller: $fontSize-base - .4rem;
 a,
-a:active,
-a:visited {
+a:active {
     color: $color-primary;
     text-decoration: none;
+    
+}
+a:visited {
+  font-style: italic;
 }
 a.nav-list-link.active,
 a:hover {
