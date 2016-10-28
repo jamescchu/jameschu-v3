@@ -44,7 +44,7 @@ var photoswipe = function(args, content) {
   var title = args.join(' ');
 
   return (
-    '<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">' +
+    '<figure class="js-post-image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">' +
       '<a class="no-barba" href="' + original + '" title="' + title + '"' + ((width && height) ? 'data-size="' + width + 'x' + height + '"' : '') + '>' +
         '<img src="' + (thumbnail || original) + '" alt="' + title + '">' +
       '</a>' +

@@ -6379,7 +6379,7 @@ var Transition = Barba.BaseTransition.extend({
   }
 });
 
-var gallerySelector = '.article-entry';
+var gallerySelector = '.js-post-content';
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
@@ -6387,7 +6387,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
     // (children of gallerySelector)
     var parseThumbnailElements = function(el) {
         //var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
-        var thumbElements = Array.from(el.querySelectorAll('figure.article-gallery-img')),
+        var thumbElements = Array.from(el.querySelectorAll('figure.js-post-image')),
             numNodes = thumbElements.length,
             items = [],
             figureEl,
@@ -6467,7 +6467,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
                 return el.matches(gallerySelector);
             }),
             //childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
-            childNodes = Array.from(clickedGallery.querySelectorAll('figure.article-gallery-img')),
+            childNodes = Array.from(clickedGallery.querySelectorAll('figure.js-post-image')),
             numChildNodes = childNodes.length,
             nodeIndex = 0,
             index;
