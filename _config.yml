@@ -95,17 +95,17 @@ html_minifier:
   enable: false
 
 js_minifier:
-  enable: false
+  enable: true
   exclude:
     - '*.min.js'
 
 css_minifier:
-  enable: false
+  enable: true
   exclude:
     - '*.min.css'
 
 image_minifier:
-  enable: false
+  enable: true
   interlaced: false
   multipass: false
   optimizationLevel: 2

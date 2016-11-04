@@ -5,7 +5,7 @@ $fontFamily-sans: 'Montserrat', sans-serif;
 // Text font size
 $fontSize-root: 62.5%;
 
-$fontSize-base: 2rem;
+$fontSize-base: 2.2rem;
 
 $fontSize-biggest: $fontSize-base + 1rem;
 $fontSize-bigger: $fontSize-base + .4rem;
@@ -16,13 +16,18 @@ a,
 a:active {
     color: $color-primary;
     text-decoration: none;
-    
 }
 a:visited {
-  font-style: italic;
+    font-style: italic;
 }
 a.nav-list-link.active,
+.post-content a,
 a:hover {
+    border-bottom: .2rem $color-primary solid;
+}
+
+.post-content a:hover {
+    font-style: italic;
     border-bottom: .2rem $color-primary solid;
 }
 
@@ -51,4 +56,7 @@ figcaption {
 blockquote {
     font-style: italic;
     margin: 4rem;
+}
+p {
+    margin: 2rem 0 5rem;
 }

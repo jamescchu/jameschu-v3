@@ -48,7 +48,7 @@ var photoswipe = function(args, content) {
       '<a class="no-barba" href="' + original + '" title="' + title + '"' + ((width && height) ? 'data-size="' + width + 'x' + height + '"' : '') + '>' +
         '<img src="' + (thumbnail || original) + '" alt="' + title + '">' +
       '</a>' +
-      '<figcaption class="caption">' + (title || '') + '</figcaption>' +
+      '<figcaption class="caption">' + ('&#x25B2; ' + title || '') + '</figcaption>' +
     '</figure>'
   );
 };

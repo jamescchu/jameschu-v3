@@ -16,11 +16,11 @@ body {
     margin: 0 2rem;
     overflow-x: hidden;
     @include break(medium) {
-        max-width: 40rem;
+        max-width: 50rem;
         margin: 0 auto;
     }
     @include break(large) {
-        max-width: 60rem;
+        max-width: 70rem;
     }
 }
 
