@@ -8,3 +8,6 @@ As a Graphic Design student at the Art Center College of Design, I’m very pass
 On the Web
 [Behance](http://behance.net/james-chu)
 [LinkedIn](https://www.linkedin.com/in/james-chu)
+
+Want to see this site's source code?
+[View it on Github](https://github.com/jamescchu/jameschu-v3)
